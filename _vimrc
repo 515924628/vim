@@ -29,8 +29,8 @@ map <F8> :%s/\(.\)/\1/g<CR>
 
 
 "设置runtimepath
-set rtp+=$VIM/vimfiles/bundle/Vundle.vim/
-call vundle#rc("$VIM/vimfiles/bundle/")
+set rtp+=D:/Code/vim/bundle/Vundle.vim
+call vundle#rc("D:/Code/vim/bundle")
 
 Bundle 'gmarik/Vundle.vim'
 
