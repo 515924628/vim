@@ -27,9 +27,11 @@ map <F8> :%s/\(.\)/\1/g<CR>
 "运行java程序
 "map <F5> :w<CR>:!javac % && java %<<CR>
 
+"git命令
+"git clone https://github.com/gmarik/vundle.git vimfiles/bundle/Vundle
 
 "设置runtimepath
-set rtp+=$VIM/vimfiles/bundle/Vundle.vim
+set rtp+=$VIM/vimfiles/bundle/Vundle
 call vundle#rc("$VIM/vimfiles/bundle/")
 
 Bundle 'gmarik/Vundle.vim'
