@@ -29,13 +29,13 @@ map <F8> :%s/\(.\)/\1/g<CR>
 
 
 "设置runtimepath
-set rtp+=D:/Code/vim/bundle/Vundle.vim
-call vundle#rc("D:/Code/vim/bundle")
+set rtp+=$VIM/vimfiles/bundle/Vundle.vim
+call vundle#rc("$VIM/vimfiles/bundle/")
 
 Bundle 'gmarik/Vundle.vim'
 
 Bundle 'mattn/emmet-vim'
-let g:user_emmet_expandabbr_key = '<Tab>'
+"let g:user_emmet_expandabbr_key = '<Tab>'
 let g:user_emmet_settings = {
 			\ 'php' : {
 			\ 'extends' : 'html',
