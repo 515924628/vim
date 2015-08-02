@@ -25,13 +25,13 @@ set helplang=cn
 "字数统计
 map <F8> :%s/\(.\)/\1/g<CR>
 "运行java程序
-"map <F5> :w<CR>:!javac % && java %<<CR>
+map <F5> :w<CR>:!javac % && java %<<CR>
 
 "git命令
-"git clone https://github.com/gmarik/vundle.git vimfiles/bundle/Vundle
+"git clone https://github.com/gmarik/vundle.git vimfiles/bundle/Vundle.vim
 
 "设置runtimepath
-set rtp+=$VIM/vimfiles/bundle/Vundle
+set rtp+=$VIM/vimfiles/bundle/Vundle.vim
 call vundle#rc("$VIM/vimfiles/bundle/")
 
 Bundle 'gmarik/Vundle.vim'
@@ -51,5 +51,11 @@ let g:user_emmet_settings = {
 			\ },
 			\}
 
+"括号补全插件
+Bundle 'jiangmiao/auto-pairs'
+let g:AutoPairsFlyMode=1
+
+"我的插件
+Bundle '515924628/vim'
 
 filetype plugin indent on
