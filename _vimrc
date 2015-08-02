@@ -24,8 +24,6 @@ set helplang=cn
 
 "字数统计
 map <F8> :%s/\(.\)/\1/g<CR>
-"运行java程序
-map <F5> :w<CR>:!javac % && java %<<CR>
 
 "git命令
 "git clone https://github.com/gmarik/vundle.git vimfiles/bundle/Vundle.vim
