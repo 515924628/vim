@@ -4,7 +4,3 @@ ab sout System.out.println("");<LEFT><LEFT><LEFT>
 map <F5> :w<CR>:!javac % && java %<<CR>
 imap <F5> <ESC><F5>
 
-inoremap ( ()<LEFT>
-inoremap " ""<LEFT>
-inoremap { {}<LEFT>
-inoremap [ []<LEFT>

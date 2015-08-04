@@ -2,6 +2,8 @@ set nocompatible
 syntax on
 filetype off
 
+
+
 color elflord
 set cursorline
 hi cursorline guibg=#000080
@@ -26,7 +28,7 @@ set helplang=cn
 map <F8> :%s/\(.\)/\1/g<CR>
 
 "git命令
-"git clone https://github.com/gmarik/vundle.git vimfiles/bundle/Vundle.vim
+"git clone git@github.com:VundleVim/Vundle.vim.git vimfiles/bundle/Vundle.vim
 
 "设置runtimepath
 set rtp+=$VIM/vimfiles/bundle/Vundle.vim
@@ -38,14 +40,14 @@ Bundle 'mattn/emmet-vim'
 "let g:user_emmet_expandabbr_key = '<Tab>'
 let g:user_emmet_settings = {
 			\ 'php' : {
-			\ 'extends' : 'html',
-			\ 'filters' : 'c',
+			\	 'extends' : 'html',
+			\	 'filters' : 'c',
 			\ },
 			\ 'xml' : {
-			\ 'extends' : 'html',
+			\	 'extends' : 'html',
 			\ },
 			\ 'haml' : {
-			\ 'extends' : 'html',
+			\	 'extends' : 'html',
 			\ },
 			\}
 
