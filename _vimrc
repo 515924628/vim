@@ -3,7 +3,6 @@ syntax on
 filetype off
 
 
-
 color elflord
 set cursorline
 hi cursorline guibg=#000080
@@ -34,9 +33,9 @@ map <F8> :%s/\(.\)/\1/g<CR>
 set rtp+=$VIM/vimfiles/bundle/Vundle.vim
 call vundle#rc("$VIM/vimfiles/bundle/")
 
-Bundle 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
-Bundle 'mattn/emmet-vim'
+Plugin 'mattn/emmet-vim'
 "let g:user_emmet_expandabbr_key = '<Tab>'
 let g:user_emmet_settings = {
 			\ 'php' : {
@@ -52,10 +51,16 @@ let g:user_emmet_settings = {
 			\}
 
 "括号补全插件
-Bundle 'jiangmiao/auto-pairs'
+Plugin 'jiangmiao/auto-pairs'
 let g:AutoPairsFlyMode=1
 
+"javascript插件
+Plugin 'pangloss/vim-javascript'
+
 "我的插件
-Bundle '515924628/vim'
+"Plugin '515924628/vim'
+
+
+call vundle#end()
 
 filetype plugin indent on
